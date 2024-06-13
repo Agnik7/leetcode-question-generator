@@ -1,0 +1,42 @@
+{
+  "name": "lc-gen",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate random leetcode questions.",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "lc-gen": "./bin/lc-gen.js"
+  },
+  "files": [
+    "index.js",
+    "getQuestion.js",
+    "bin/questions.json",
+    "bin/lc-gen.js",
+    "utils/arg.util.js",
+    "utils/file.util.js"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agnik7/leetcode-question-generator.git"
+  },
+  "keywords": [
+    "questions",
+    "package",
+    "code",
+    "lc"
+  ],
+  "author": "Agnik Bakshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agnik7/leetcode-question-generator/issues"
+  },
+  "homepage": "https://github.com/Agnik7/leetcode-question-generator#readme",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2",
+    "path": "^0.12.7"
+  }
+}
