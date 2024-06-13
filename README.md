@@ -12,18 +12,13 @@ lc-gen is a node.js package that provides you with a random LeetCode problem lin
 
 1.  **Install Node.js:** Ensure that Node.js is installed on your system.
 
-2.  **Clone the Repository:** Clone this repository to your local machine using the following command:
+
+2.  **Install Dependencies:** Open your terminal and run:
        ```bash
-       git clone https://github.com/yourusername/lc-gen.git
+       npm i -g lc-gen
        ```
 
-3.  **Install Dependencies:** Navigate to the cloned directory and install the required dependencies:
-       ```bash
-       cd lc-gen
-       npm install
-       ```
-
-4. **Run the Generator:** Simply run the following command to generate a random LeetCode problem link:
+3. **Run the Generator:** Simply run the following command to generate a random LeetCode problem link:
    ```bash
    lc-gen
    ```

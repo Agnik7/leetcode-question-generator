@@ -7,9 +7,9 @@ const __dirname = path.dirname(__filename);
 const getQuestionsFilePath = () => {
     if (process.platform === 'win32') {
         const username = os.userInfo().username;
-        return path.join(`C:\\Users\\${username}\\AppData\\Roaming\\npm\\node_modules\\random-question\\bin\\questions.json`);
+        return path.join(`C:\\Users\\${username}\\AppData\\Roaming\\npm\\node_modules\\lc-gen\\bin\\questions.json`);
     } else {
-        return path.join(`/usr/local/lib/node_modules/random-question/bin/questions.json`);
+        return path.join(`/usr/local/lib/node_modules/lc-gen/bin/questions.json`);
     }
 };
 
