@@ -1,5 +1,6 @@
 # LeetCode Question Generator
-
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAgnik7%2Fleetcode-question-generator&countColor=%23dce775)
+![Contributors](https://img.shields.io/github/contributors/Agnik7/leetcode-question-generator?style=for-the-badge)
 ### Your Gateway to Infinite Coding Challenges
 
 Are you preparing for online contests or job interviews? With **lc-gen**, you can bid farewell to the hassle of manually searching for problems and embrace a seamless, random problem-generation experience!
