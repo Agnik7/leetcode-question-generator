@@ -1,16 +1,17 @@
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
+import { promisify } from 'util';
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const getQuestionsFilePath = () => {
-    if (process.platform === 'win32') {
-        const username = os.userInfo().username;
-        return path.join(`C:\\Users\\${username}\\AppData\\Roaming\\npm\\node_modules\\lc-gen\\bin\\questions.json`);
-    } else {
-        return path.join(`/usr/local/lib/node_modules/lc-gen/bin/questions.json`);
-    }
+import { exec } from 'child_process';
+const execAsync = promisify(exec);
+const getQuestionsFilePath = async() => {
+    const { stdout } = await execAsync('npm root -g');
+    const packageRoot = stdout.trim();
+    const questionsFilePath = path.join(packageRoot, 'lc-gen', 'bin', 'questions.json');
+    return questionsFilePath;
 };
 
 const readQuestionsFile = (filePath, callback) => {

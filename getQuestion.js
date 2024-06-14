@@ -3,8 +3,8 @@ import boxen from 'boxen';
 import { getQuestionsFilePath, readQuestionsFile, readPackageJson } from './utils/file.util.js';
 import { parseArgs, showHelp } from './utils/arg.util.js';
 
-const getRandomQuestionLink = () => {
-    const filePath = getQuestionsFilePath();
+const getRandomQuestionLink = async() => {
+    const filePath = await getQuestionsFilePath();
     const args = process.argv.slice(2);
     const parsedArgs = parseArgs(args);
 

@@ -32,10 +32,9 @@ Additionally, you can filter the difficulty of the questions by passing the foll
 - `--medium` : Filter questions by medium difficulty
 - `--hard` : Filter questions by hard difficulty
 
+![Sample Usage](assets/sample.gif)
+
 **Contribute**
 
-We welcome contributions to the lc-gen project. If you have any suggestions for improvement or would like to add new features, please feel free to create a pull request.
-
-**License**
-
-This project is licensed under the MIT License.
+We welcome contributions to the lc-gen project. If you wish to contribute, please refer to our [Contribution Guidelines](https://github.com/Agnik7/leetcode-question-generator/blob/main/CONTRIBUTING.md) for comprehensive details on submitting your pull requests.
+Your contributions are pivotal in nurturing the growth of our vibrant tech community.
